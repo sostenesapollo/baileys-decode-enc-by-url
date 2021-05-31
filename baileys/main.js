@@ -24,6 +24,7 @@ conn.on('chat-update', chatUpdate => {
             messageType == MessageType.sticker
         ) {
             console.log('New media Message');
+            console.log(message);
 
             const {mediaKey, url, mimetype, title} = message.message[messageType]
             console.log({ mediaKey: mediaKey.toString('base64'), url, messageType, mimetype, title });
