@@ -19,15 +19,24 @@ conn.on('chat-update', chatUpdate => {
 
         if(
             messageType == MessageType.image || 
+            messageType == MessageType.audio || 
             messageType == MessageType.video || 
             messageType == MessageType.document || 
             messageType == MessageType.sticker
         ) {
             console.log('New media Message');
-            console.log(message);
 
-            const {mediaKey, url, mimetype, title} = message.message[messageType]
-            console.log({ mediaKey: mediaKey.toString('base64'), url, messageType, mimetype, title });
+            const whatsappTypeMessageToDecode = HKDFInfoKeys[messageType]
+            const {mediaKey, url, mimetype, title } = message.message[messageType]
+
+            console.log({ 
+                url,
+                mediaKey: mediaKey.toString('base64'),
+                messageType,
+                whatsappTypeMessageToDecode,
+                mimetype,
+                title,
+            });
 
         } else {
             console.log('message', messageType, 'no action related to files.');
