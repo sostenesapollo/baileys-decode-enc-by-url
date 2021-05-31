@@ -2,3 +2,4 @@ auth_info.json
 node_modules
 tmp
 decoded
+env
