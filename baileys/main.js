@@ -23,7 +23,6 @@ conn.on('chat-update', chatUpdate => {
             messageType == MessageType.document || 
             messageType == MessageType.sticker
         ) {
-            console.log(message);
             console.log('New media Message');
 
             const {mediaKey, url, mimetype, title} = message.message[messageType]
