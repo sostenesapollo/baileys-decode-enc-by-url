@@ -4,7 +4,7 @@
 - [x] Convert downloaded ```.enc``` into a real file and store into ```./decoded```
 
 ### Audio payload
-
+```
 payload_audio = {
   'url': 'https://mmg.whatsapp.net/d/f/AhJJD1xpcJw9Pw7NGmuqVbvpn5GaG8qJOitF0PbcyqXy.enc',
   'mediaKey': 'fNKalX3uVGmOf/CdbsI8TIdxCDoXeD2V6uhu8yrPUIg=',
@@ -12,9 +12,10 @@ payload_audio = {
   'whatsappTypeMessageToDecode': 'WhatsApp Audio Keys',
   'mimetype': 'audio/ogg; codecs=opus'
 }
+```
 
 ### Image payload
-
+```
 payload_image = {
   'url': 'https://mmg.whatsapp.net/d/f/AgfjfrORL0TfvrWe5jbf1xXESmnPGezNn0QmSf-7We_p.enc',
   'mediaKey': 'Lh6YXfZxhuhJo2/FdPuQrEARg6BiZ+zHkybfXNg3dYA=',
@@ -22,9 +23,11 @@ payload_image = {
   'whatsappTypeMessageToDecode': 'WhatsApp Image Keys',
   'mimetype': 'image/jpeg'
 }
+```
 
 ### PDF payload
 
+```
 payload_pdf = {
   'url': 'https://mmg.whatsapp.net/d/f/AuWmR-lCzpyFPgjXwtTswQoTV0fsf886MccGt0arr6sg.enc',
   'mediaKey': 'JPLCs6KLpe/exkEbhenNSeSR79f5sSowMhE0MqNdpKQ=',
@@ -33,9 +36,11 @@ payload_pdf = {
   'mimetype': 'application/pdf',
   'title': '1820_I1HFmGZ.pdf'
 }
+```
 
 ### Video payload
 
+```
 payload_video = {
   'url': 'https://mmg.whatsapp.net/d/f/Ag5bLACAJ-yo5mwQc8BuxBrr_yElaLh9x4V60NTf3NrO.enc',
   'mediaKey': 'uYsctaBPFmJYe+EtSkM/SW1D7NXWhwOAOM7NWbxMJvs=',
@@ -43,3 +48,4 @@ payload_video = {
   'whatsappTypeMessageToDecode': 'WhatsApp Video Keys',
   'mimetype': 'video/mp4'
 }
+```
